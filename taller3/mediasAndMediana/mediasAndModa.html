@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias Mediana & Moda</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcula Promedio Moda y Medianas</h1>
+    </header>
+    <main>
+        <p class="static-description">Recuerda separar cada número con una coma y un espacio</p>
+        <section class="static-container">
+            <div class="static average-box">
+                <div class="static__header">
+                    <h2 class="static__header--title" id="title-average">Promedio</h2>
+                </div>
+                <form class="static__form">
+                    <label for="obtenPromedio" class="static__form--label average-label">Introduce un conjunto de números 
+                        para calcular el promedio
+                    </label>
+                    <div class="static__inputs-container">
+                        <input type="text" id="obtenPromedio" class="static__input average-input" placeholder="Ej: 10, 5, 22, 35">
+                    </div>
+                    <div class="static__button-container">
+                        <button type="button" class="button average-button" onclick="calcularPromedio()">Calcular</button>
+                    </div>
+                    <div class="static_results-container">
+                        <p id="resultAverage" class="static__results average-result"></p>
+                    </div>
+                </form>          
+            </div>
+            <div class="static median-box">
+                <div class="static__header">
+                    <h2 class="static__header--title" id="title-median">Mediana</h2>
+                </div>
+                <form class="static__form">
+                    <label for="obtenMediana" class="static__form--label median-label">Introduce un conjunto de números para calcular 
+                        la mediana
+                    </label>
+                    <div class="static__inputs-container">
+                        <input type="text" id="obtenMedia" class="static__input median-input" placeholder="Ej: 5, 10, 8, 24" />    
+                    </div>
+                    <div class="static__button-container">
+                        <button type="button" class="button median-button" onclick="getMedian()">Calcular</button>
+                    </div>
+                    <div class="static__results-container">
+                        <p id="medianResult" class="static__results"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="static moda-box">
+                <div class="static__header">
+                    <h2 class="static__header--title " id="moda-title">Moda</h2>
+                </div>
+                <form class="static__form">
+                    <label for="obtenModa" class="static__form--label moda-label">Introduce un conjunto de números
+                        para calcular la moda
+                    </label>
+                    <div class="static__inputs-container">
+                        <input type="text" id="obtenModa" class="static__input moda-input" placeholder="Ej: 8, 5, 15, 22">
+                    </div>
+                    <div class="static__button-container">
+                        <button type="button" class="button moda-button" onclick="getModa()">Calcular</button>
+                    </div>
+                    <div class="static__results-container">
+                        <p id="moda_result_1" class="static__results"></p>
+                        <p id="moda_result_2" class="static__results"></p>
+                        <p id="moda_result_3" class="static__results"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="static armonica-box">
+                <div class="static__header">
+                    <h2 class="static__header--title " id="armonica-title">Media Armonica</h2>
+                </div>
+                <form class="static__form">
+                    <label for="obtenMediaArmonica" class="static__form--label armonica-label">
+                        Introduce un conjunto de números para calcular la media armonica
+                    </label>
+                    <div class="static__inputs-container armonica-input-container">
+                        <input type="text" id="obtenMediaArmonica" class="static__input armonica-input" placeholder="Ej: 10, 8, 14, 20">
+                    </div>
+                    <div class="static__button-container">
+                        <button type="button" class="button armonica-button" onclick="getArmonica()">Calcular</button>
+                    </div>
+                    <div class="static__results-container">
+                        <p id="armonica_result" class="static__results"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="static volumen-box">
+                <div class="static__header">
+                    <h2 class="static__header--title " id="volumen-title">Volumen</h2>
+                    <p class="statit-decription-p">Halla el volumen de un cilindro</p>
+                </div>
+                <form class="static__form">
+                    <label for="obtenVolumen" class="static__form--label volumen-label static__header--title label__volumen_1">
+                        Radio
+                    </label>
+                    <div class="static__inputs-container volumen-input-container">
+                        <input type="text" id="obtenVolumen" class="static__input volumen-input-1" placeholder="Ej: 3">
+                    </div>
+                    <label for="obtenVolumen2" class="static__form--label volumen-label static__header--title label__volumen_2">
+                        Altura
+                    </label>
+                    <div class="static__inputs-container volumen-input-container">
+                        <input type="text" id="obtenVolumen2" class="static__input volumen-input-2" placeholder="Ej: 10">
+                    </div>
+                    <div class="static__button-container">
+                        <button type="button" class="button volumen-button" onclick="getVolumen()">Calcular</button>
+                    </div>
+                    <div class="static__results-container">
+                        <p id="volumen_result" class="static__results"></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./mediasAndModa.js"></script>
+</body>
+</html>

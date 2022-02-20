@@ -1,0 +1,105 @@
+*
+{
+    margin: 8px;
+    padding: 4;
+}
+
+header
+{
+    display: block;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 500;
+}
+
+body
+{
+    font-family: 'Noto Sans', sans-serif;;
+    background-image: url(https://i.postimg.cc/q7z6MTXR/elyse-dodge-geometric-landscape-paintings-13.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.global
+{
+    font-family: 'Architects Daughter', cursive;
+}
+.cuadrado
+{
+    display: flexbox;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.botonCuadrado
+{
+    border-color: grey;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Architects Daughter', cursive; 
+    margin-top:10px;
+    margin-inline: 20px;
+}
+
+.triangulo
+{
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+
+.dentroForm
+{
+    display: flex;
+    justify-content: center;
+}
+
+.bnGlobal
+{
+    border-color: black;
+    border-color: gray;
+    border-radius: 10px;
+    background-color: white;
+    font-family: 'Architects Daughter', cursive; 
+}
+
+.inputs
+{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 50px;
+    height: 20px;
+}
+
+.btCirculo
+{
+    background-color: white;
+}
+
+.circulo
+{
+    display: flexbox;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.resultados
+{
+    border-radius: 10px;
+    display: flexbox; 
+    text-align: center;
+    background-color: rgb(16, 235, 82);
+}
+
+@media (max-width: 500px)
+{    
+    body
+    {
+        background-image: url(https://i.postimg.cc/q7Nxq7Ph/947578ffb04a2e628ef2185b54a87038-500x658.jpg);
+        background-repeat: initial;
+        background-size: 100%;
+    }
+}

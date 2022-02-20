@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso Practico de JavasCript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="/taller1/styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Figuras Geométricas
+        </h1>
+        <p>Primer taller curso practico de JS</p>
+    </header>
+    
+    <section class="cuadrado global">
+        <h2>Calcula el área y el perímetro de un cuadrado</h2>
+        <form class="formCuadrado">
+
+            <label for="inputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+
+            <input class="inputs" id="inputCuadrado" type="number"/>
+            <div class="botonCuadro">
+                <button class="botonCuadrado" type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perímetro
+                </button>
+    
+                <button class="botonCuadrado" type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área
+                </button>
+
+            </div>
+            
+            <p class="resultados" id="mostrarCuadro"></p>
+        </form>
+    </section>
+
+    <section class="triangulo global">
+        <h2>Calcula el área y el perímetro de un triangulo</h2>
+        <form class="formTriangulo">
+            <label id="titleTriangulo">
+                Escribe los lados y la base de tu triangulo
+            </label>
+            <div class="dentroForm">
+                <p>Lado 1</p>
+                <input class="inputs"id="lado1" type="number" />
+                <p>Lado 2</p>
+                <input class="inputs" id="lado2" type="number" />
+                <p>Base</p>
+                <input class="inputs" id="base" type="number" />
+            </div>
+            
+            <div class="botonTriangulo">
+                <button class="bnGlobal" type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perimetro
+                </button>
+                <button class="bnGlobal" type="button" onclick="calcularAlturaTriangulo()">
+                    Calcular la altura
+                </button>
+                <button class="bnGlobal" type="button" onclick="calcularAreaTriangulo()">
+                    Calcular el área
+                </button>
+            </div>
+           
+            <p class="resultados" id="mostrarTriangulo"></p>
+        </form>
+    </section>
+
+    <section class="circulo global">
+        <h2>Calcula el diametro, el perímetro y el área de un circulo</h2>
+        <form>
+            <label for="radioCirculo">
+                Escribe el radio de tu circulo
+            </label>
+            
+                <input class="inputs" id="radioCirculo" type="number" />
+                
+                <button class="bnGlobal btCirculo" type="button" onclick="calcularDiametroCirculo()">
+                    Calcular el diametro
+                </button>
+                <button class="bnGlobal btCirculo" type="button" onclick="calcularPerimetroCirculo()">
+                    Calcular el perimetro
+                </button>
+                <button class="bnGlobal btCirculo" type="button" onclick="calcularAreaCirculo()">
+                    Calcular el área
+                </button>
+        </form>
+        <p class="resultados"id="mostrarCirculo"></p>
+    </section>
+    <script src="/taller1/figuras.js"></script>
+</body>
+</html>

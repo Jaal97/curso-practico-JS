@@ -1,0 +1,333 @@
+/* Estilos generales */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+}
+
+h1
+{
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+body
+{
+    font-family: 'Noto Sans', sans-serif;;
+    background-image: url(https://i.postimg.cc/q7z6MTXR/elyse-dodge-geometric-landscape-paintings-13.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.static-container
+{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+    justify-content: center;
+    gap: 20px;
+}
+
+.static-description
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(39, 199, 7);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.static
+{
+    height: 320px;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 7px 1px #757575;
+    border: 3px solid rgba(rgb(56, 47, 47), rgb(120, 209, 120), rgb(179, 179, 207), 0.1);
+}
+.static__header--title
+{
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+}
+.static__form--label
+{
+    display: block;
+    margin-bottom: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.static__inputs-container
+{
+    margin: 0 auto;
+    width: 280px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid rgba(rgb(56, 47, 47), rgb(120, 209, 120), rgb(179, 179, 207), 0.1);
+    border-radius: 15px;
+}
+
+.static__input
+{
+    margin-top: 14px;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 00.5px;
+    font-size: 18px;
+    line-height: 20px;
+    width: 280px;
+    height: 30px;
+}
+.static__results
+{
+    margin-top: 14px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    line-height: 22px;
+}
+.button
+{
+    width: 120px;
+    height: 30px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Estilos por cada caja */
+/* Average Box Promedio */
+.average-box
+{
+    background: lightseagreen;
+}
+
+#title-average
+{
+    color: #a11a1a;
+}
+
+.average-label
+{
+    color: black;
+}
+
+.average-input
+{
+    background-color: rgb(253, 253, 253);
+    color: black;
+    border-color: #a11a1a;
+}
+
+.average-button
+{
+    background-color: #a11a1a;
+    color: white;
+}
+
+#resultAverage
+{
+    color:black
+}
+
+/* Median Box  */
+.median-box
+{
+    background: #aaa1a1;
+}
+
+#title-median
+{
+    color: rgb(24, 24, 201);   
+}
+
+.median-label
+{
+    color: white;
+}
+
+.median-input
+{
+    background: white;
+    color: black;
+    border-color: rgb(24, 24, 201);
+}
+
+.median-button
+{
+    background-color: rgb(24, 24, 201);
+    color: white;
+}
+#medianResult
+{
+    color: #fff;
+}
+
+/* Moda Box */
+.moda-box
+{
+    background-color: LawnGreen;
+}
+
+#moda-title
+{
+    color: rgb(211, 108, 12);
+}
+
+.label-moda
+{
+    color: black;
+}
+
+.moda-input
+{
+    border-color: rgb(211, 108, 12);
+}
+.moda-button
+{
+    background: rgb(211, 108, 12);
+    color: #fff;
+}
+
+#moda_result_1
+{
+    color: black;
+}
+/* Armonica Box */
+.armonica-box
+{
+    background: rgb(236, 132, 91);
+}
+
+#armonica-title
+{
+    color: rgb(22, 161, 22);
+}
+
+.armonica-label
+{
+    color: #fff;
+}
+
+.armonica-input
+{
+    border-color: rgb(22, 161, 22);
+}
+
+.armonica-button
+{
+    background: rgb(22, 161, 22);
+    color: #fff;
+}
+
+#armonica_result
+{
+    color: #fff;
+}
+
+/* Volumen Box */
+
+.volumen-box
+{
+    background: rgb(153, 64, 236);
+}
+
+#volumen-title
+{
+    text-align: center;
+    color: white;
+}
+
+.statit-decription-p
+{
+    margin-top: -10px;
+    font-size: 18px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.volumen-label
+{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.label__volumen_1
+{
+    padding-bottom: 0px;
+}
+
+.label__volumen_2
+{
+    padding-bottom: 0px;
+}
+
+.volumen-input-1
+{
+   margin-top: -15px;
+   padding: 0px;
+   border-color: #757575;
+   border: 1.5px solid #221d1d;
+}
+
+.volumen-input-2
+{
+    margin-top: -60px;
+    padding: 0px;
+    border-color: #757575;
+    border: 1.5px solid #221d1d;
+}
+
+.volumen-button
+{
+    margin-top: -3px;
+    padding-top: 0px;
+    color: #fff;
+    background: #757575;
+    border: 1.5px solid #221d1d;
+}
+
+#volumen_result
+{
+    font-size: 18px;
+    margin-top: -15px;
+}
+
+@media (max-width: 500px)
+{    
+    body
+    {
+        background-image: url(https://i.postimg.cc/PrsW3PbM/paisaje.png);
+        background-repeat: initial;
+        background-size: 100%;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos | Curso practico de JS</title>
+    <link rel="stylesheet" href="/taller2/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <p id="title_des">Segundo taller curso práctico de JS</p>
+    </header>
+    <main>
+     <section class="container">
+        <h2>Calcular el precio de tu producto</h2>
+        <form >
+
+            <label class="labelInputs" for="InputPrice">
+                Precio:
+            </label>
+            <input class="inputs" id="InputPrice" type="number" />
+
+            <label class="labelInputs" for="InputDiscount">
+                Descuento:
+            </label>
+            <input class="inputs" id="InputDiscount" type="number" />
+
+            <button class="btn" type="button" onclick="calcDiscount()">Calcular descuento</button>
+
+            <label class="labelInputs" for="discountCoupons">
+                Tienes algún CUPON?
+            </label>
+
+            <input class="inputs" type="text" id="discountCoupons" />
+
+            <!-- Solucion #1 -->
+            <!-- <select name="coupons" id="discountCoupons" onclick="couponsAproved()">
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="diamond">Diamond</option>
+            </select> -->
+
+            <button class="btn" type="button" onclick="calcularDescuento()">Descuento + CUPON</button>
+            <div class="parrafos">
+                <p id="result"></p>
+                <p id="result2"></p>
+                <p id="result3"></p>
+            </div>
+        </form>
+    </section>
+    </main>
+    <script src="/taller2/descuentos.js"></script>
+</body>
+</html>
